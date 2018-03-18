@@ -13,10 +13,11 @@ namespace BeacomDwollaWeatherGrabberCli
             {
                 Console.Write("Type a city name to get current temperature: ");
                 var input = Console.ReadLine();
-                var temperatureRetrievalService = new TemperatureService();
-                var temperature = temperatureRetrievalService.GetTemperatureForCity(input);
-                Console.WriteLine(String.Format("Temperature for {0} is {1}", input, temperature));
+                var temperatureService = new TemperatureService();
+                var temperatureReplyService = new TemperatureReplyService(temperatureService);
+                Console.WriteLine(temperatureReplyService.GetTemperatureReply(input));
             }
         }
-    }
+
+   }
 }
