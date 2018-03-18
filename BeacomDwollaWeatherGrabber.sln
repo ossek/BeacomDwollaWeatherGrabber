@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeacomDwollaWeatherGrabberC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeacomDwollaWeatherGrabberTest", "BeacomDwollaWeatherGrabberTest\BeacomDwollaWeatherGrabberTest.csproj", "{EB575B09-033F-4427-A513-934C8C8333F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeacomDwollaWeatherGrabberInterfaces", "BeacomDwollaWeatherGrabberInterfaces\BeacomDwollaWeatherGrabberInterfaces.csproj", "{001502A4-CFC1-4E8A-8D48-105335B7E8CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeacomDwollaWeatherGrabberOpenWeatherService", "BeacomDwollaWeatherGrabberOpenWeatherService\BeacomDwollaWeatherGrabberOpenWeatherService.csproj", "{F0D0A999-A34A-498D-87C0-CF602780DCC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +48,29 @@ Global
 		{EB575B09-033F-4427-A513-934C8C8333F4}.Release|x64.Build.0 = Release|x64
 		{EB575B09-033F-4427-A513-934C8C8333F4}.Release|x86.ActiveCfg = Release|x86
 		{EB575B09-033F-4427-A513-934C8C8333F4}.Release|x86.Build.0 = Release|x86
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|x64.ActiveCfg = Debug|x64
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|x64.Build.0 = Debug|x64
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|x86.ActiveCfg = Debug|x86
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Debug|x86.Build.0 = Debug|x86
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|x64.ActiveCfg = Release|x64
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|x64.Build.0 = Release|x64
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|x86.ActiveCfg = Release|x86
+		{001502A4-CFC1-4E8A-8D48-105335B7E8CB}.Release|x86.Build.0 = Release|x86
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|x64.ActiveCfg = Debug|x64
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|x64.Build.0 = Debug|x64
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|x86.ActiveCfg = Debug|x86
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Debug|x86.Build.0 = Debug|x86
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|x64.ActiveCfg = Release|x64
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|x64.Build.0 = Release|x64
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|x86.ActiveCfg = Release|x86
+		{F0D0A999-A34A-498D-87C0-CF602780DCC2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

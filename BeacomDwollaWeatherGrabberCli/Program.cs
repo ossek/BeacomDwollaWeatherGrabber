@@ -1,4 +1,6 @@
 ﻿using System;
+using BeacomDwollaWeatherGrabberInterfaces;
+using BeacomDwollaWeatherGrabberOpenWeatherService;
 
 namespace BeacomDwollaWeatherGrabberCli
 {
@@ -11,9 +13,9 @@ namespace BeacomDwollaWeatherGrabberCli
             {
                 Console.Write("Type a city name to get current temperature: ");
                 var input = Console.ReadLine();
-                var temperatureRetrievalService = new TemperatureRetrievalService()
+                var temperatureRetrievalService = new TemperatureService();
                 var temperature = temperatureRetrievalService.GetTemperatureForCity(input);
-                Console.WriteLine(String.Format("Temperature for {0} is {1}", input, temperature);
+                Console.WriteLine(String.Format("Temperature for {0} is {1}", input, temperature));
             }
         }
     }
