@@ -15,4 +15,6 @@ Runnable with run.sh or the usual dotnet build commands on a platform that has d
  - look into other ways of checking city validity such as the list of codes on the OpenWeather api site
  - provide Self-contained executable / exe artifacts or others
  - some sort of secret management or at least unhardcode api key and move to .config file
+ - more test cases for stuff like Des Moines Washington vs Des Moines IA and other same-name cities
+
 
