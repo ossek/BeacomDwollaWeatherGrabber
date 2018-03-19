@@ -1,0 +1,1 @@
+dotnet run --project BeacomDwollaWeatherGrabberCli/BeacomDwollaWeatherGrabberCli.csproj

@@ -19,21 +19,22 @@ namespace BeacomDwollaWeatherGrabberOpenWeatherService
         public bool CityIsValid(string city)
         {
             HttpClient client = new HttpClient();
-            var apikey = "REAL KEY HERE";
+            var apikey = "d773b609a835cde212c77abcc8bfa6ae";
             var url = string.Format(
                 "http://api.openweathermap.org/data/2.5/weather?q={0}&APPID={1}"
                 , city, apikey);
             var result = client.GetAsync(url).Result;
-            if (result.StatusCode == HttpStatusCode.Found) return true;
-            return false;
+            if (result.StatusCode == HttpStatusCode.OK) return true;
+            if (result.StatusCode == HttpStatusCode.NotFound) return false;
+            throw new ArgumentException("Something went wrong trying to call Open Weather Api");
         }
 
         public double GetTemperatureForCity(string city)
         {
             HttpClient client = new HttpClient();
-            var apikey = "37aa5595669439095cd44d80f942c3c2";
+            var apikey = "d773b609a835cde212c77abcc8bfa6ae";
             var url = string.Format(
-                "http://api.openweathermap.org/data/2.5/weather?q={0}&APPID={1}"
+                "http://api.openweathermap.org/data/2.5/weather?q={0}&units=imperial&APPID={1}"
                 , city, apikey);
             //a TODO would be to either find an actual sync library or make these methods async
             var result = client.GetAsync(url).Result;
@@ -53,8 +54,8 @@ namespace BeacomDwollaWeatherGrabberOpenWeatherService
                 name = "London",
                 cod = 200
             };
-            var deser = JsonConvert.DeserializeAnonymousType(resultString,example);
-            return deser.main.temp;
+            var deserialized = JsonConvert.DeserializeAnonymousType(resultString,example);
+            return deserialized.main.temp;
         }
     }
 }

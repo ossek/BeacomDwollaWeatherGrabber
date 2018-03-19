@@ -13,13 +13,21 @@ namespace BeacomDwollaWeatherGrabberOpenWeatherService
         public string GetTemperatureReply(string input)
         {
             {
-                var cityIsValid = _temperatureRetrievalService.CityIsValid(input);
-                if (!cityIsValid)
+                double temperature;
+                try
                 {
-                    return String.Format("Sorry, {0} is not a valid city", input);
+                    var cityIsValid = _temperatureRetrievalService.CityIsValid(input);
+                    if (!cityIsValid)
+                    {
+                        return String.Format("Sorry, {0} is not a valid city", input);
+                    }
+                    temperature = _temperatureRetrievalService.GetTemperatureForCity(input);
                 }
-                var temperature = _temperatureRetrievalService.GetTemperatureForCity(input);
-                return String.Format("Temperature for {0} is {1}", input, temperature);
+                catch (Exception e)
+                {
+                    return String.Format("Sorry, there was a problem getting weather data for {0}", input);
+                }
+                return String.Format("Temperature for {0} is {1} degrees fahrenheit", input, temperature);
             }
         }
     }

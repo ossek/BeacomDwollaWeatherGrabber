@@ -5,6 +5,6 @@ namespace BeacomDwollaWeatherGrabberInterfaces
     public interface ITemperatureService
     {
         bool CityIsValid(string input);
-        float GetTemperatureForCity(string input);
+        double GetTemperatureForCity(string input);
     }
 }

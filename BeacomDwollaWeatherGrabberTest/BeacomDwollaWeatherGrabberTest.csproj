@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BeacomDwollaWeatherGrabberInterfaces\BeacomDwollaWeatherGrabberInterfaces.csproj" />
+    <ProjectReference Include="..\BeacomDwollaWeatherGrabberOpenWeatherService\BeacomDwollaWeatherGrabberOpenWeatherService.csproj" />
   </ItemGroup>
 
 </Project>
