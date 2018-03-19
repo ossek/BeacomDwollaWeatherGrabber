@@ -43,7 +43,6 @@ namespace BeacomDwollaWeatherGrabberTest
             validCityService.Setup(m => m.GetTemperatureForCity(It.IsAny<string>()))
               .Throws(new ArgumentException("prob"));
             var temperatureReplyService = new TemperatureReplyService(validCityService.Object);
-            Exception caught = null;
             var reply = temperatureReplyService.GetTemperatureReply("any city");
             var expected = "Sorry, there was a problem getting weather data for any city";
             Assert.Equal(expected, reply);
